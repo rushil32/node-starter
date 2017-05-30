@@ -1,4 +1,4 @@
-# Node started template
+# MEAN starter template
 
 After starting from scratch over and over again while learning MEAN web development I decided to finally put a good starter template together. The app uses Node, Express, Angular 2 and Boostrap 4. 
 
