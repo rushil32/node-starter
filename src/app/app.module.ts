@@ -6,9 +6,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { EventsComponent } from './events/events.component';
-import { EventsService } from './events.service';
-import { LoginComponent } from './login/login.component';
+import { FeedbackComponent } from './feedback/feedback.component';
+import { FeedbackService } from './feedback/feedback.service';
 
 const ROUTES = [
   {
@@ -17,20 +16,15 @@ const ROUTES = [
     pathMatch: 'full'
   },
   {
-    path: 'events',
-    component: EventsComponent
-  },
-  {
-    path: 'login',
-    component: LoginComponent
+    path: 'feedback',
+    component: FeedbackComponent
   }
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
-    EventsComponent,
-    LoginComponent
+    FeedbackComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +32,7 @@ const ROUTES = [
     HttpModule,
     RouterModule.forRoot(ROUTES)
   ],
-  providers: [EventsService],
+  providers: [FeedbackService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
